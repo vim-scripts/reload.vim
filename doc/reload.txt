@@ -30,7 +30,13 @@ Note that |vimrc| scripts are not reloaded because that seems to cause more
 trouble than it's worth...
 
 ==============================================================================
-Usage ~
+Install & first use ~
+
+Unzip the most recent ZIP archive [2] file inside your Vim profile directory
+(usually this is '~/.vim' on UNIX and '%USERPROFILE%\vimfiles' on Windows),
+restart Vim and try it out: Edit any Vim script that's already loaded and
+check that the script is reloaded when you save it (the reload.vim plug-in
+will print a message to confirm when a script is reloaded).
 
 Out of the box the reload.vim [1] plug-in is configured to automatically
 reload all Vim scripts that it knows how to. If you like it this way then you
@@ -69,7 +75,7 @@ reloaded they'll have to be written a certain way, though you can consider the
 following points good practice for Vim script writing anyway:
 
 ------------------------------------------------------------------------------
-Use a bang in command/function definitions! ~
+Use a bang in command and function definitions! ~
 
 Function and command definitions using Vim's |:command| and |:function|
 built-ins should include a bang (!) (see |:command-bang|) symbol, otherwise
@@ -106,7 +112,7 @@ several times:
 ==============================================================================
 Alternatives ~
 
-The ReloadScript [2] plug-in on www.vim.org also supports reloading of Vim
+The ReloadScript [3] plug-in on www.vim.org also supports reloading of Vim
 scripts, but there are a few notable differences:
 
  • This plug-in focuses on automatic reloading (I'm lazy) while the other one
@@ -126,18 +132,21 @@ Contact ~
 If you have questions, bug reports, suggestions, etc. the author can be
 contacted at peter@peterodding.com. The latest version is available at
 http://peterodding.com/code/vim/reload/ and http://github.com/xolox/vim-reload.
+If you like the plug-in please vote for it on www.vim.org [4].
 
 ==============================================================================
 License ~
 
-This software is licensed under the MIT license [3].
+This software is licensed under the MIT license [5].
 © 2010 Peter Odding <peter@peterodding.com>.
 
 ==============================================================================
 References ~
 
 [1] http://github.com/xolox/vim-reload/blob/master/reload.vim
-[2] http://www.vim.org/scripts/script.php?script_id=1904
-[3] http://en.wikipedia.org/wiki/MIT_License
+[2] http://peterodding.com/code/vim/downloads/reload
+[3] http://www.vim.org/scripts/script.php?script_id=1904
+[4] http://www.vim.org/scripts/script.php?script_id=3148
+[5] http://en.wikipedia.org/wiki/MIT_License
 
 vim: syntax=help nospell
