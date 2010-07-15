@@ -34,8 +34,10 @@ Install & first use ~
 
 Unzip the most recent ZIP archive [2] file inside your Vim profile directory
 (usually this is '~/.vim' on UNIX and '%USERPROFILE%\vimfiles' on Windows),
-restart Vim and try it out: Edit any Vim script that's already loaded and
-check that the script is reloaded when you save it (the reload.vim plug-in
+restart Vim and execute the command ':helptags ~/.vim/doc' (use ':helptags
+~\vimfiles\doc' instead on Windows). Now try it out: Edit any Vim script
+that's already loaded (you can check using the |:scriptnames| command) and
+confirm that the script is reloaded when you save it (the reload.vim plug-in
 will print a message to confirm when a script is reloaded).
 
 Out of the box the reload.vim [1] plug-in is configured to automatically
@@ -117,9 +119,6 @@ scripts, but there are a few notable differences:
 
  • This plug-in focuses on automatic reloading (I'm lazy) while the other one
    requires manual reloading;
-
- • This plug-in doesn't clear inclusion guard variables while the other one
-   does;
 
  • This plug-in will never |:source| a file that hasn't already been loaded by
    Vim -- it checks using Vim's |:scriptnames| command;
